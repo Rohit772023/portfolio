@@ -3,32 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kartik Raj | Portfolio</title>
+  <title>Rohit Kumar | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <header>
-    <nav class="navbar">
-        <div class="logo">Kartik Raj</div>
-        <button id="darkModeToggle" class="dark-toggle">🌙</button>
-        <div class="menu-toggle">&#9776;</div>
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      
-  </header>
+<!-- Navigation Bar -->
+<header>
+  <nav class="navbar">
+    <div class="logo">Rohit Kumar</div>
+
+    <!-- Action icons like dark mode toggle & menu -->
+    <div class="navbar-actions">
+      <button class="dark-toggle" id="darkModeToggle">🌙</button>
+      <div class="menu-toggle" id="menuToggle">☰</div>
+    </div>
+
+    <!-- Navigation Links -->
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
   <!-- Home Section -->
   <section id="home" class="home-section">
     <div class="home-content">
-      <h1>Hi, I'm Kartik Raj</h1>
+      <img src="/myphoto.png" alt="Rohit Kumar" class="home-photo" />
+      <h1>Hi, I'm Rohit Kumar</h1>
       <p>Ethical Hacker | Developer | Linux Admin</p>
       <a href="#projects" class="btn">View Projects</a>
     </div>
@@ -37,9 +42,12 @@
   <!-- About Me Section -->
   <section id="about" class="about-section">
     <h2>About Me</h2>
-    <p>
-      I'm Kartik, a Computer Science student and tech enthusiast who loves working on IoT, automation, ethical hacking, and Linux. I enjoy building smart systems and solving real-world problems with code and creativity.
-    </p>
+    <div class="about-content">
+      <img src="images/your-photo.jpg" alt="Rohit Kumar" class="about-photo" />
+      <p>
+        I'm Rohit, a Computer Science student and tech enthusiast who loves working on IoT, automation, ethical hacking, and Linux. I enjoy building smart systems and solving real-world problems with code and creativity.
+      </p>
+    </div>
   </section>
 
   <!-- Projects Section -->
@@ -69,23 +77,43 @@
       <li>JavaScript</li>
       <li>Python</li>
       <li>Linux</li>
-      <li>ESP8266 & IoT</li>
-      <li>WordPress</li>
+      <li>IoT</li>
       <li>Ethical Hacking</li>
     </ul>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact-section">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:kartik@example.com">kartik@example.com</a></p>
-    <p>GitHub: <a href="https://github.com/yourgithub" target="_blank">github.com/yourgithub</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/yourlinkedin" target="_blank">linkedin.com/in/yourlinkedin</a></p>
-  </section>
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <h2>Contact Me</h2>
+  <div class="contact-container">
+    <!-- Social Media Links -->
+    <div class="social-media">
+      <p>Connect with me:</p>
+      <a href="mailto:rohitkumar772023@hotmail.com" target="_blank" class="social-icon">
+        <img src="icons/email-icon.png" alt="Email" />
+      </a>
+      <a href="https://github.com/Rohit772023" target="_blank" class="social-icon">
+        <img src="icons/github-icon.png" alt="GitHub" />
+      </a>
+      <a href="https://instagram.com/kartikraj5162" target="_blank" class="social-icon">
+        <img src="icons/instagram-icon.png" alt="Instagram" />
+      </a>
+    </div>
+
+    <!-- Contact Form -->
+    <form class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </div>
+</section>
+
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Kartik Raj. All rights reserved.</p>
+    <p>&copy; 2025 Rohit Kumar. All rights reserved.</p>
   </footer>
 </body>
 </html>
